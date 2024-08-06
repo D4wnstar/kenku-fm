@@ -5,7 +5,7 @@
   "description": "Online tabletop audio sharing for Discord",
   "main": "./.webpack/main",
   "scripts": {
-    "start": "electron-forge start",
+    "start": "electron-forge start -- --no-sandbox --in-process-gpu --enable-features=UseOzonePlatform --ozone-platform=wayland --enable-wayland-ime",
     "package": "env-cmd electron-forge package",
     "make": "env-cmd electron-forge make",
     "publish": "env-cmd electron-forge publish",
